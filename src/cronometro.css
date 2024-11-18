@@ -1,0 +1,110 @@
+/* Estilo del contenedor principal */
+.cronometro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Fondo suave para emular un móvil */
+    text-align: center; 
+}
+
+/* Título del cronómetro */
+.cronometro-container h1 {
+    font-size: 1.5rem;
+    color: #4CAF50; /* Verde suave */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo de la pantalla del cronómetro */
+.cronometro-screen {
+    background-color: #333; /* Pantalla oscura */
+    color: #0f0; /* Color verde brillante */
+    font-size: 4rem; /* Tamaño grande para fácil lectura */
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 25px; /* Bordes redondeados */
+    margin: 20px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    display: inline-block;
+    min-width: 200px;
+    max-width: 350px;
+}
+
+/* Contenedor de los botones */
+.cronometro-buttons {
+    display: flex;
+    gap: 15px; /* Espacio entre botones */
+}
+
+/* Estilo de los botones */
+.cronometro-buttons button {
+    background-color: #4CAF50; /* Verde de fondo */
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px; /* Bordes completamente redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+}
+
+/* Efecto hover en los botones */
+.cronometro-buttons button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de agrandado */
+}
+
+/* Estilo de los botones deshabilitados */
+.cronometro-buttons button:disabled {
+    background-color: #b0b0b0;
+    color: #ddd;
+    cursor: not-allowed;
+    border-color: #ccc;
+}
+
+/* Estilo de los tiempos parciales */
+.tiempos-guardados {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+/* Título de los tiempos parciales */
+.tiempos-guardados h2 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Estilo de la lista de tiempos parciales */
+.tiempos-guardados ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo de cada ítem de la lista */
+.tiempos-guardados li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* Color de los números (#1, #2, ...) de los tiempos parciales */
+.tiempos-guardados li strong {
+    color: #4CAF50; /* Color verde */
+    margin-right: 10px; /* Separación entre el número y el tiempo */
+}
